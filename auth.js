@@ -62,7 +62,7 @@ unsubscribe = auth.onAuthStateChanged((user) => {
   if (user) {
     
     setUserTitle(user.uid);
-    getUserLevel();
+    // getUserLevel();
     if (window.location.href.indexOf("app.html") == -1) {
       window.location.replace('./app.html');
       console.log('user ',user);
